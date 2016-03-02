@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792ED0341C85995E00FA4618 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792ED0321C85995E00FA4618 /* Item+CoreDataProperties.swift */; };
+		792ED0351C85995E00FA4618 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792ED0331C85995E00FA4618 /* Item.swift */; };
+		792ED0391C85A8BD00FA4618 /* AddNewItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792ED0381C85A8BD00FA4618 /* AddNewItemVC.swift */; };
+		792ED03B1C85E80A00FA4618 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792ED03A1C85E80A00FA4618 /* Database.swift */; };
 		84F44F291C83775200580264 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F44F281C83775200580264 /* AppDelegate.swift */; };
-		84F44F2B1C83775200580264 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F44F2A1C83775200580264 /* ViewController.swift */; };
 		84F44F2E1C83775200580264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F44F2C1C83775200580264 /* Main.storyboard */; };
 		84F44F311C83775200580264 /* MyFridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84F44F2F1C83775200580264 /* MyFridge.xcdatamodeld */; };
 		84F44F331C83775200580264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F44F321C83775200580264 /* Assets.xcassets */; };
@@ -16,9 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		792ED0321C85995E00FA4618 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		792ED0331C85995E00FA4618 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		792ED0381C85A8BD00FA4618 /* AddNewItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemVC.swift; sourceTree = "<group>"; };
+		792ED03A1C85E80A00FA4618 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		84F44F251C83775200580264 /* MyFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F44F281C83775200580264 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84F44F2A1C83775200580264 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84F44F2D1C83775200580264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F44F301C83775200580264 /* MyFridge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFridge.xcdatamodel; sourceTree = "<group>"; };
 		84F44F321C83775200580264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		792ED0361C859AAC00FA4618 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				792ED0321C85995E00FA4618 /* Item+CoreDataProperties.swift */,
+				792ED0331C85995E00FA4618 /* Item.swift */,
+				792ED03A1C85E80A00FA4618 /* Database.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		792ED0371C85A89A00FA4618 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				792ED0381C85A8BD00FA4618 /* AddNewItemVC.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		84F44F1C1C83775200580264 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +80,9 @@
 		84F44F271C83775200580264 /* MyFridge */ = {
 			isa = PBXGroup;
 			children = (
+				792ED0371C85A89A00FA4618 /* ViewController */,
+				792ED0361C859AAC00FA4618 /* CoreData */,
 				84F44F281C83775200580264 /* AppDelegate.swift */,
-				84F44F2A1C83775200580264 /* ViewController.swift */,
 				84F44F2C1C83775200580264 /* Main.storyboard */,
 				84F44F321C83775200580264 /* Assets.xcassets */,
 				84F44F341C83775200580264 /* LaunchScreen.storyboard */,
@@ -139,8 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792ED03B1C85E80A00FA4618 /* Database.swift in Sources */,
+				792ED0351C85995E00FA4618 /* Item.swift in Sources */,
 				84F44F311C83775200580264 /* MyFridge.xcdatamodeld in Sources */,
-				84F44F2B1C83775200580264 /* ViewController.swift in Sources */,
+				792ED0341C85995E00FA4618 /* Item+CoreDataProperties.swift in Sources */,
+				792ED0391C85A8BD00FA4618 /* AddNewItemVC.swift in Sources */,
 				84F44F291C83775200580264 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +319,7 @@
 				84F44F3C1C83775200580264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
