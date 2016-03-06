@@ -2,7 +2,7 @@
 //  Item.swift
 //  MyFridge
 //
-//  Created by Nguyen Anh Thu on 01/03/16.
+//  Created by Minh on 05.03.16.
 //  Copyright © 2016 NAT. All rights reserved.
 //
 
